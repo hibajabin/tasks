@@ -5,8 +5,8 @@ assignments from betaquirrel
 ###requirements
  | requirements             |output|
  |--------------------------|------|
- |![task1](images%5Ctask1.jpg)|two   |
- |![task1](images%5Ctask2.jpg)|two   |
+ |![task1](images\task1.jpg)|two   |
+ |![task1](images\task2.jpg)|two   |
 
 Veniam sint excepteur et**sint incididunt** ea*aliqua enim* deserunt duis ~~ullamco~~ nostrud velit magna. Nostrud officia consectetur Lorem cillum qui pariatur ad est. Exercitation ad deserunt aliqua ea dolore mollit nisi sint.
 
