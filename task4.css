@@ -74,7 +74,9 @@
 
     height: 100%;
     width: calc(100% - 282px);
-    padding: 15px;
+    padding: 15px 15px 50px 15px;
+    overflow-y: auto;
+
 }
 
 .heading {
@@ -112,12 +114,12 @@ th {
     text-transform: uppercase;
 }
 
-table,
-th,
-td {
+table.list-table,
+.list-table th,
+.list-table td {
     border: 2px solid grey;
     border-collapse: collapse;
-    text-align: left;
+
 }
 
 td:first-child,
@@ -132,4 +134,44 @@ th:first-child {
 th,
 td {
     padding: 5px;
+}
+
+.list-table th:first-child,
+.list-table td:first-child {
+    width: auto;
+}
+
+caption {
+    padding-bottom: 15px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.colored-container th {
+    background-color: yellowgreen;
+}
+
+table.colored-container {
+    border-collapse: collapse;
+}
+
+.colored-container tr {
+    border-bottom: 2px solid grey;
+}
+
+.list-table tr:hover {
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 767px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        width: calc(100% - 30px);
+        overflow-x: auto;
+
+    }
 }
