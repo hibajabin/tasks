@@ -164,7 +164,8 @@ table.colored-container {
     cursor: pointer;
 }
 
-.sidebar img {
+.sidebar img,
+.sidebar i {
     height: 25px;
     width: 25px;
     margin-right: 15px;
@@ -175,6 +176,12 @@ table.colored-container {
     display: flex;
     align-items: center;
 
+}
+
+.sidebar i {
+    vertical-align: center;
+    line-height: 28px;
+    color: rgb(22, 134, 178);
 }
 
 @media only screen and (max-width : 767px) {
