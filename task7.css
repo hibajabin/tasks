@@ -1,0 +1,35 @@
+.bg-dark {
+
+    background-color: rgb(52, 43, 43) !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: grey !important;
+    /* height: calc(100vh - 57.33px); */
+    width: 150px;
+}
+
+.sidebar a {
+    color: white;
+
+}
+
+.nav-link active {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width : 767px) {
+    .sidebar {
+        width: 50px !important;
+    }
+
+    .main-content {
+        height: calc(100vh - 57.33px);
+        overflow: auto;
+    }
+}

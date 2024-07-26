@@ -1,0 +1,33 @@
+.navbar {
+    background-color: grey;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+}
+
+.navbar img {
+    margin-right: 15px;
+}
+
+.profile {
+    background-color: teal !important;
+    width: 40px;
+    padding: 6px 0px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: orange;
+}

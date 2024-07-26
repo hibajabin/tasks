@@ -38,3 +38,16 @@ Veniam sint excepteur et**sint incididunt** ea*aliqua enim* deserunt duis ~~ulla
 
 - mobile `@media only screen and (max-width : 767px){}`
 - tablet `@media only screen and (max-width : 991px) and (min-width:768px){}`
+
+## datatypes
+- text
+- tel
+- email
+- submit
+- reset
+- checkbox
+- radio
+- color
+- url
+- date
+- time

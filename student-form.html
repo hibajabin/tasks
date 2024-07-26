@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+
+    <title>One school | Bootstrap</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="images/bootstrap (1).svg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="task7.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/bootstrap (1).svg" alt="logo" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                Oneschool
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#profilecollapse"
+                aria-controls="profilecollapse" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown collpase navbar-collapse justify-content-end" id="profilecollapse">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Hiba Jabin
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <div class="d-flex">
+        <nav class="sidebar">
+            <div class="position-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="task7.html">
+                            <i class="bi bi-house-door"></i>
+                            <span class="d-none d-md-inline">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-active" href="student.html">
+                            <i class="bi bi-person"></i>
+                            <span class="d-none d-md-inline">Students</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-people"></i>
+                            <span class="d-none d-md-inline">Staffs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-currency-dollar"></i>
+                            <span class="d-none d-md-inline">Accounts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-box"></i>
+                            <span class="d-none d-md-inline">Inventory</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-book"></i>
+                            <span class="d-none d-md-inline">Library</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid main-content">
+            <div class="row">
+                <div class="col mt-3">
+                    <h3 class="mb-1">ADD STUDENT</h3>
+                    <hr />
+                    <div class="row">
+                        <div class="col mt-3">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 mb-2">
+                                        <label for="first name" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="first name" name="first name"
+                                            required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 mb-2">
+                                        <label for="last name" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="last name" name="last name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 mb-2">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="mobile" class="form-label">Mobile</label>
+                                        <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-2">
+                                        <label for="address" class="form-label">Address</label>
+                                        <textarea class="form-control" id="address" name="address" row="3"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-sm-12 col-md-6 mb-2">
+                                        <label for="education" class="form-label">Education</label>
+                                        <select class="form-select" id="education" name="education" required>
+                                            <option value="" disabled selected>Select Education</option>
+                                            <option value="bachelors">Bachelors</option>
+                                            <option value="masters">Masters</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 mb-2">
+                                        <div>
+                                            <label class="form-label">Is Degree Completed</label>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="degreecompleted"
+                                                    id="degreeyes" value="yes">
+                                                <label class="form-check-label" for="degreeyes">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="degreecompleted"
+                                                    id="degreeno" value="no">
+                                                <label class="form-check-label" for="degreeno">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div>
+                                            <label class="form-label">Skills</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="skills[]"
+                                                id="skillHTML" value="HTML">
+                                            <label class="form-check-label" for="skillHTML">HTML</label>
+
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="skills[]"
+                                                id="skillCSS" value="CSS">
+                                            <label class="form-check-label" for="skillCSS">CSS</label>
+
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="skills[]" id="skillJs"
+                                                value="Js">
+                                            <label class="form-check-label" for="skillJs">Js</label>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="col text-end">
+                                    <button type="reset" class="btn btn-secondary mb-2 mx-2">Reset</button>
+                                    <button type="submit" class="btn btn-primary mb-2">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
